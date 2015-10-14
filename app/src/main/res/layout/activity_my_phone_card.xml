@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/input_psd"
+        android:textColor="@color/white_grey"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:textColor="@color/white_grey"
+        android:textSize="20sp" />
+
+    <com.chenls.smartlock.MyPhoneCard
+        android:id="@+id/dialpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/light_black"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/one"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t1\t\t\t" />
+
+        <Button
+            android:id="@+id/two"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t2\t\t\t" />
+
+        <Button
+            android:id="@+id/three"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t3\t\t\t" />
+
+        <Button
+            android:id="@+id/four"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t4\t\t\t" />
+
+        <Button
+            android:id="@+id/five"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t5\t\t\t" />
+
+        <Button
+            android:id="@+id/six"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t6\t\t\t" />
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t7\t\t\t" />
+
+        <Button
+            android:id="@+id/eight"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t8\t\t\t" />
+
+        <Button
+            android:id="@+id/nine"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t9\t\t\t" />
+
+        <Button
+            android:id="@+id/star"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t*\t\t\t"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/zero"
+            style="@style/dial_btn_style"
+            android:text="\t\t\t0\t\t\t" />
+
+        <ImageButton
+            android:id="@+id/pound"
+            style="@style/dial_btn_style"
+            android:src="@mipmap/delete" />
+
+    </com.chenls.smartlock.MyPhoneCard>
+</LinearLayout>
